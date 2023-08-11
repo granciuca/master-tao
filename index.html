@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Master Tao Cargo</title>
+  </head>
+  <body>
+    <header class="d-flex align-items-center" id="header">
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="" class="logo-img" />
+        <img src="assets/img/logo-text.svg" alt="" class="logo-text" />
+        <div class="cargo"><p>CARGO</p></div>
+      </div>
+      <div class="nav d-flex justify-content-between">
+        <a href="#">Цены и сроки</a>
+        <a href="#">Услуги</a>
+        <a href="#">О компании</a>
+        <a href="#">Контакты</a>
+        <a href="#">Оформить груз</a>
+      </div>
+      <a href="#" class="request"><p>Оставить заявку</p></a>
+    </header>
+
+    <main>
+      <section id="slider-section">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/MSC-Isabella_2020.webp" alt="" class="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h2>Прямое КАРГО из Китая</h2>
+                  <h4>Доставляем любые грузы из Китая по честной цене</h4>
+                  <a href="#">Рассчитать стоимость</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/MSC-Isabella_2020.webp" alt="" class="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h2>Прямое КАРГО из Китая</h2>
+                  <h4>Доставляем любые грузы из Китая по честной цене</h4>
+                  <a href="#">Рассчитать стоимость</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/MSC-Isabella_2020.webp" alt="" class="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h2>Прямое КАРГО из Китая</h2>
+                  <h4>Доставляем любые грузы из Китая по честной цене</h4>
+                  <a href="#">Рассчитать стоимость</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="getCost-section">
+        <div class="get-cost d-flex justify-content-center">
+          <div class="cost-form d-flex flex-wrap flex-column">
+            <div class="cost-form-text">
+              <h3>Получить рассчет стоимости доставки вашего груза</h3>
+            </div>
+            <div class="cost-form-fields d-flex flex-column">
+              <span class="cost-label-one d-flex align-items-center justify-content-center">1</span>
+              <span class="cost-label-two d-flex align-items-center justify-content-center">2</span>
+              <span class="cost-label-three d-flex align-items-center justify-content-center">3</span>
+              <div class="line d-flex flex-row justify-content-between">
+                <div class="category d-flex flex-column">
+                  <h5>Категория товара:</h5>
+                  <input type="text" placeholder="Категория товара" />
+                </div>
+                <div class="cargo-cost d-flex flex-column">
+                  <h5>Стоимость груза:</h5>
+                  <input type="text" placeholder="Введите стоимость" />
+                </div>
+              </div>
+              <div class="line d-flex flex-row justify-content-between">
+                <div class="weight d-flex flex-column">
+                  <h5>Вес груза (кг):</h5>
+                  <input type="text" placeholder="Введите вес" />
+                </div>
+                <div class="volume d-flex flex-column">
+                  <div class="volume-text d-flex flex-row justify-content-between">
+                    <h5>Объем груза (м3):</h5>
+                    <a href="#">Рассчитать</a>
+                  </div>
+                  <input type="text" placeholder="Введите объем" />
+                </div>
+              </div>
+              <div class="line d-flex flex-row justify-content-between">
+                <div class="checkboxes d-flex flex-column">
+                  <div class="one d-flex flex-row">
+                    <input type="checkbox" name="insurance" id="insurance" />
+                    <label for="insurance">Страховка</label>
+                  </div>
+                  <div class="two d-flex flex-row">
+                    <input type="checkbox" name="customs" id="customs" checked />
+                    <label for="customs">Таможенное оформление</label>
+                  </div>
+                </div>
+                <div class="code d-flex flex-column">
+                  <h5>Код ТН ВЭД:</h5>
+                  <input type="text" placeholder="Введите код" />
+                </div>
+              </div>
+              <a href="#" class="next-step d-flex align-items-center justify-content-between">
+                <h5>Следующий шаг</h5>
+                <img src="assets/img/arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <img src="assets/img/medium-shot-man-holding-clipboard_1-removebg 1.svg" alt="" class="man" />
+          <img src="assets/img/logo.svg" alt="" class="logo-helmet" />
+        </div>
+      </section>
+
+      <section id="why-us-section">
+        <div class="why-text d-flex justify-content-center">
+          <h3>Почему стоит выбрать именно нас?</h3>
+        </div>
+        <div class="whys d-flex flex-column">
+          <div class="why-one d-flex flex-row justify-content-between">
+            <div class="one d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-check" viewBox="0 0 16 16">
+                  <path d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                  <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                </svg>
+              </div>
+              <p>Таможенное оформление груза</p>
+            </div>
+            <div class="two d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                  <path
+                    d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+                  />
+                  <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                </svg>
+              </div>
+              <p>Страховка груза</p>
+            </div>
+            <div class="three d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                </svg>
+              </div>
+              <p>Проверка товара на брак</p>
+            </div>
+            <div class="four d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                  <path
+                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                  />
+                </svg>
+              </div>
+              <p>Доставка в любой город РФ</p>
+            </div>
+          </div>
+
+          <div class="why-two d-flex flex-row justify-content-between">
+            <div class="one d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                  />
+                  <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                </svg>
+              </div>
+              <p>Консолидация на складе</p>
+            </div>
+            <div class="two d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                  <path
+                    d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"
+                  />
+                </svg>
+              </div>
+              <p>Ответственное хранение груза</p>
+            </div>
+            <div class="three d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                  <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                </svg>
+              </div>
+              <p>Помощь в оплате товара</p>
+            </div>
+            <div class="four d-flex flex-column align-items-center">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                  <path
+                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+                  />
+                </svg>
+              </div>
+              <p>Упаковка, переупаковка, паллетирование груза к международной перевозке</p>
+            </div>
+          </div>
+          <div class="why-two d-flex flex-row justify-content-between"></div>
+        </div>
+      </section>
+
+      <section id="delivery-section" class="d-flex flex-column align-items-center">
+        <h3 class="delivery-text">Варианты доставки грузов из Китая</h3>
+
+        <div class="swiper deliverySwiper">
+          <div class="swiper-wrapper delivery-wrapper">
+            <div class="delivery-slide swiper-slide">
+              <div class="delivery-option d-flex flex-column align-items-center">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-24.svg" alt="" />
+                </div>
+                <div class="delivery-details d-flex align-items-center flex-column">
+                  <h5>Авто - обычная</h5>
+                  <div class="details d-flex align-items-center justify-content-between">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path
+                          d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                        />
+                        <path
+                          d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>9-15 дней</h6>
+
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2" viewBox="0 0 16 16">
+                        <path
+                          d="M2.95.4a1 1 0 0 1 .8-.4h8.5a1 1 0 0 1 .8.4l2.85 3.8a.5.5 0 0 1 .1.3V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4.5a.5.5 0 0 1 .1-.3L2.95.4ZM7.5 1H3.75L1.5 4h6V1Zm1 0v3h6l-2.25-3H8.5ZM15 5H1v10h14V5Z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>от 5 кг</h6>
+                  </div>
+                  <h5 class="price">от <span>2,5</span>$/кг</h5>
+                  <div class="buttons d-flex justify-content-between">
+                    <a href="#" class="requestBtn">Оставить заявку</a>
+                    <a href="#" class="detailsBtn">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="delivery-slide swiper-slide">
+              <div class="delivery-option d-flex flex-column align-items-center">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-24.svg" alt="" />
+                </div>
+                <div class="delivery-details d-flex align-items-center flex-column">
+                  <h5>Авто - обычная</h5>
+                  <div class="details d-flex align-items-center justify-content-between">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path
+                          d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                        />
+                        <path
+                          d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>9-15 дней</h6>
+
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2" viewBox="0 0 16 16">
+                        <path
+                          d="M2.95.4a1 1 0 0 1 .8-.4h8.5a1 1 0 0 1 .8.4l2.85 3.8a.5.5 0 0 1 .1.3V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4.5a.5.5 0 0 1 .1-.3L2.95.4ZM7.5 1H3.75L1.5 4h6V1Zm1 0v3h6l-2.25-3H8.5ZM15 5H1v10h14V5Z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>от 5 кг</h6>
+                  </div>
+                  <h5 class="price">от <span>2,5</span>$/кг</h5>
+                  <div class="buttons d-flex justify-content-between">
+                    <a href="#" class="requestBtn">Оставить заявку</a>
+                    <a href="#" class="detailsBtn">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="delivery-slide swiper-slide">
+              <div class="delivery-option d-flex flex-column align-items-center">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-24.svg" alt="" />
+                </div>
+                <div class="delivery-details d-flex align-items-center flex-column">
+                  <h5>Авто - обычная</h5>
+                  <div class="details d-flex align-items-center justify-content-between">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path
+                          d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                        />
+                        <path
+                          d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>9-15 дней</h6>
+
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2" viewBox="0 0 16 16">
+                        <path
+                          d="M2.95.4a1 1 0 0 1 .8-.4h8.5a1 1 0 0 1 .8.4l2.85 3.8a.5.5 0 0 1 .1.3V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4.5a.5.5 0 0 1 .1-.3L2.95.4ZM7.5 1H3.75L1.5 4h6V1Zm1 0v3h6l-2.25-3H8.5ZM15 5H1v10h14V5Z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>от 5 кг</h6>
+                  </div>
+                  <h5 class="price">от <span>2,5</span>$/кг</h5>
+                  <div class="buttons d-flex justify-content-between">
+                    <a href="#" class="requestBtn">Оставить заявку</a>
+                    <a href="#" class="detailsBtn">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="delivery-slide swiper-slide">
+              <div class="delivery-option d-flex flex-column align-items-center">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-24.svg" alt="" />
+                </div>
+                <div class="delivery-details d-flex align-items-center flex-column">
+                  <h5>Авто - обычная</h5>
+                  <div class="details d-flex align-items-center justify-content-between">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path
+                          d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                        />
+                        <path
+                          d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>9-15 дней</h6>
+
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2" viewBox="0 0 16 16">
+                        <path
+                          d="M2.95.4a1 1 0 0 1 .8-.4h8.5a1 1 0 0 1 .8.4l2.85 3.8a.5.5 0 0 1 .1.3V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4.5a.5.5 0 0 1 .1-.3L2.95.4ZM7.5 1H3.75L1.5 4h6V1Zm1 0v3h6l-2.25-3H8.5ZM15 5H1v10h14V5Z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>от 5 кг</h6>
+                  </div>
+                  <h5 class="price">от <span>2,5</span>$/кг</h5>
+                  <div class="buttons d-flex justify-content-between">
+                    <a href="#" class="requestBtn">Оставить заявку</a>
+                    <a href="#" class="detailsBtn">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="delivery-slide swiper-slide">
+              <div class="delivery-option d-flex flex-column align-items-center">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-24.svg" alt="" />
+                </div>
+                <div class="delivery-details d-flex align-items-center flex-column">
+                  <h5>Авто - обычная</h5>
+                  <div class="details d-flex align-items-center justify-content-between">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                        <path
+                          d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                        />
+                        <path
+                          d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>9-15 дней</h6>
+
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2" viewBox="0 0 16 16">
+                        <path
+                          d="M2.95.4a1 1 0 0 1 .8-.4h8.5a1 1 0 0 1 .8.4l2.85 3.8a.5.5 0 0 1 .1.3V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4.5a.5.5 0 0 1 .1-.3L2.95.4ZM7.5 1H3.75L1.5 4h6V1Zm1 0v3h6l-2.25-3H8.5ZM15 5H1v10h14V5Z"
+                        />
+                      </svg>
+                    </div>
+                    <h6>от 5 кг</h6>
+                  </div>
+                  <h5 class="price">от <span>2,5</span>$/кг</h5>
+                  <div class="buttons d-flex justify-content-between">
+                    <a href="#" class="requestBtn">Оставить заявку</a>
+                    <a href="#" class="detailsBtn">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="services-section" class="d-flex flex-column align-items-center">
+        <h3 class="services-text">Услуги</h3>
+        <div class="swiper servicesSwiper">
+          <div class="swiper-wrapper services-wrapper">
+            <div class="services-slide swiper-slide">
+              <div class="services-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-23.png" alt="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h4>Выкуп товара</h4>
+                  <p>
+                    Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="services-slide swiper-slide">
+              <div class="services-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-23.png" alt="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h4>Выкуп товара</h4>
+                  <p>
+                    Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="services-slide swiper-slide">
+              <div class="services-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-23.png" alt="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h4>Выкуп товара</h4>
+                  <p>
+                    Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="services-slide swiper-slide">
+              <div class="services-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-23.png" alt="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h4>Выкуп товара</h4>
+                  <p>
+                    Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="services-slide swiper-slide">
+              <div class="services-option d-flex flex-column align-items-start">
+                <div class="img-wrapper">
+                  <img src="assets/img/Rectangle-23.png" alt="" />
+                </div>
+                <div class="info d-flex flex-column align-items-start">
+                  <h4>Выкуп товара</h4>
+                  <p>
+                    Компания - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО Китай-Россия.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="about-section">
+        <div class="about d-flex flex-row align-items-center justify-content-center">
+          <div class="about-text">
+            <h2>О компании</h2>
+            <p>
+              Компания Азия Карго - это полный комплекс логистических услуг по доставке грузов из Китая в Россию - сборные грузы и цельные товарные партии, услуги посредника ТаоБао, КАРГО
+              Китай-Россия. Для вашего удобства есть тарифы на лёгкий и тяжелый куб. Мы работаем на рынке более 4 лет, а руководители компании занимаются логистикой уже более 11 лет. <br />
+              <br />
+              Мы стремимся предоставить лучшие условия доставки и лучший сервис своим клиентам. Выбирая нас - вы выбираете качественную доставку оптимальную по цене и времени! Убедитесь в этом сами!
+            </p>
+          </div>
+
+          <div class="about-photo">
+            <img src="assets\img\image-2.png" alt="" class="pen" />
+            <img src="assets\img\Clipboard-Office-Brand-Mockup.png" alt="" class="clipboard" />
+          </div>
+        </div>
+      </section>
+
+      <section id="faq-section">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-info d-flex flex-row align-items-center justify-content-center">
+          <div class="faq-questions">
+            <ul>
+              <li class="faq">
+                <div class="question align-items-center">
+                  Как рассчитывается стоимость доставки?
+                  <span class="icon-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="answer non-active">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam provident dolores nesciunt voluptatibus officia ea eveniet at iste esse exercitationem? Ea laudantium maxime quae
+                  totam dolores sint similique aperiam molestiae?
+                </div>
+              </li>
+              <li class="faq">
+                <div class="question">
+                  Как происходит оплата за доставку груза?
+                  <span class="icon-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="answer non-active">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur totam amet odio? Et praesentium assumenda doloremque odio totam consequatur voluptas odit placeat, laboriosam
+                  iusto ratione neque tenetur, quis corporis quos ea reprehenderit! Nihil ducimus expedita consequatur mollitia placeat ullam.
+                </p>
+              </li>
+              <li class="faq">
+                <div class="question">
+                  Как быстро оформить заказ на доставку из Китая в Россию?
+                  <span class="icon-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="answer non-active">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, tenetur? Inventore consectetur delectus expedita facilis molestias maxime, voluptatem laborum commodi dolorem
+                  praesentium nesciunt doloribus. Distinctio laudantium minus perferendis pariatur temporibus quod dolores cum dolorum sequi? Sequi nulla fugiat natus animi quam ullam, perspiciatis
+                  voluptatibus quisquam, quia pariatur, atque culpa cumque?
+                </p>
+              </li>
+              <li class="faq">
+                <div class="question">
+                  Можно ли через вас оплатить товар поставщику?
+                  <span class="icon-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="answer non-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur quas modi dignissimos porro, ullam nemo quod quisquam laudantium non.</p>
+              </li>
+              <li class="faq">
+                <div class="question">
+                  В чём особенность КАРГО доставки из Китая
+                  <span class="icon-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="answer non-active">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi repellat, voluptates, porro, a minima labore nihil ab ipsam rem architecto! Similique laboriosam eligendi
+                  sapiente nobis suscipit non itaque blanditiis.
+                </p>
+              </li>
+              <li class="faq">
+                <div class="question">
+                  Какой срок доставки из Китая?
+                  <span class="icon-main">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <p class="answer non-active">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perferendis blanditiis, molestias incidunt vero sed doloremque vitae veniam culpa facilis.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="faq-form d-flex flex-column align-items-start">
+            <h5>Остались вопросы?</h5>
+            <p>Оставьте заявку и наш менеджер ответит вам в ближайшее время</p>
+            <div class="inputs">
+              <input type="text" placeholder="Имя *" />
+              <input type="text" placeholder="Телефон *" />
+              <input type="text" placeholder="E-mail" />
+              <input type="text" placeholder="Ваш вопрос" />
+            </div>
+            <a href="#" class="send-request d-flex align-items-center justify-content-between">
+              <h5>Отправить запрос</h5>
+              <img src="assets/img/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ready-section">
+        <h2>Готовы к сотрудничеству?</h2>
+        <h4>Зарегистрируйте груз!</h4>
+        <div class="ready-line container d-flex flex-row align-items-center justify-content-center">
+          <p>
+            • Для того, чтобы начать сотрудничество, необходимо оформить груз указав информацию о содержимом груза, его стоимость и количество. А так-же прикрепив фотографии к заявке. <br /><br />
+            • Если требуется проверка товара на соответсвие количеству, то при оформлении груза на нашем сайте укажите это в графе "Примечание". Данная услуга платная и составляет 3 юаня за одну
+            позицию в заказе. Любые дополнительные проверки груза обсуждаются индивидуально в том числе и их стоимость. <br /><br />
+            • До отправки груза на наш склад в Китае обязательно позаботьтесь о том, чтобы сделать маркировку, с номером Вашего заказа у нас на сайте, для каждой внешней коробки, чтобы мы смогли
+            определить именно Ваш груз. Если у Вас нет возможности сделать это самостоятельно, то попросите об этом своего поставщика.
+          </p>
+          <img src="assets\img\Rectangle-26.png" alt="" />
+        </div>
+
+        <div class="ready-line container d-flex flex-row align-items-center justify-content-center">
+          <img src="assets\img\Rectangle-27.png" alt="" />
+          <div class="infoAndBtn">
+            <p>
+              • После отправки груза на наш склад в Китае, Вам обязательно нужно указать трек-номер для отслеживания посылок по Китаю для каждой позиции в заказе. Внести трек-номер можно на странице
+              заказа. Трек-номер - это ещё одна мера для идентификации Вашего груза на нашем складе.<br /><br />
+              • Если Вы оформили груз по нашей инструкции и сделали все правильно, то при получении Вашего груза на складе в Китае статус заказа изменится на "На складе".
+            </p>
+            <a href="#" class="send-request d-flex align-items-center justify-content-between">
+              <h5>Отправить запрос</h5>
+              <img src="assets/img/arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-columns container d-flex flex-row justify-content-between">
+        <div class="column d-flex flex-column">
+          <div class="logo">
+            <img src="assets/img/logo.svg" alt="" class="logo-img" />
+            <img src="assets/img/logo-text.svg" alt="" class="logo-text" />
+            <div class="cargo"><p>CARGO</p></div>
+          </div>
+          <a href="tel:+8(800)600-18-69">+ 8(800)600-18-69</a>
+          <a href="mailto:info@cargoasia.info">info@cargoasia.info</a>
+          <p>
+            Адрес в Китае: <br />
+            浙江省金华市义乌市后宅街道洪华小区5 <br />
+            栋一单元一楼RT789库房 高建军 电话
+          </p>
+          <p>15966660379</p>
+
+          <div class="social">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="column">
+          <ul>
+            <h5>Грузоперевозки</h5>
+            <li><a href="#">Цены и сроки</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Оформить груз</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <ul>
+            <h5>Услуги</h5>
+            <li><a href="#">Выкуп товара</a></li>
+            <li><a href="#">Страховка груза</a></li>
+            <li><a href="#">Аренда склада</a></li>
+            <li><a href="#">Перевод денежных средств</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <ul>
+            <h5>Информация</h5>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Требования к грузу</a></li>
+            <li><a href="#">Договор-оферта</a></li>
+            <li><a href="#">Как заключить договор</a></li>
+            <li><a href="#">Способы оплаты услуг</a></li>
+            <li><a href="#">Документы</a></li>
+            <li><a href="#">Статьи</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
